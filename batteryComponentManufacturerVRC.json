@@ -1,0 +1,26 @@
+{
+  "@context": ["https://www.w3.org/2018/credentials/v1"],
+  "type": ["VerifiableCredential", "ProvenanceCredential"],
+  "issuer": "did:example:rawmaterialsupplier456",
+  "issuanceDate": "2024-02-15T00:00:00Z",
+  "txid": "",
+  "credentialSubject": {
+    "id": "did:example:batterycomponentmanufacturer789",
+    "authority": ["process", "battery component manufacture"],
+    "lithiumBatch": {
+      "quantity": "800 kg",
+      "batchNumber": "LB1234",
+      "transactionId": "0xdef456..."
+    },
+    "previousVRC": {
+      "Lithium": "QmPreviousVRC1..."
+    }
+  },
+  "proof": {
+    "type": "Ed25519Signature2018",
+    "created": "2024-02-15T00:00:00Z",
+    "proofPurpose": "assertionMethod",
+    "verificationMethod": "did:example:rawmaterialsupplier456#keys-1",
+    "jws": "EyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOls..."
+  }
+}

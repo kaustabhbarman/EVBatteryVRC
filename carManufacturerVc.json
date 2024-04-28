@@ -1,0 +1,25 @@
+{
+  "@context": ["https://www.w3.org/2018/credentials/v1", "https://www.w3.org/2018/credentials/examples/v1"],
+  "type": ["VerifiableCredential", "ProvenanceCredential"],
+  "issuer": "did:example:evbatterymanufacturer012",
+  "issuanceDate": "2024-04-20T09:30:00Z",
+  "txid": "",
+  "credentialSubject": {
+    "id": "did:example:carmaker345",
+    "authority": ["integrate", "sell"],
+    "batteryDetails": {
+      "batchNumber": "EB2345",
+      "quantity": "100 units",
+      "transactionId": "0xjkl101112..."
+    },
+    "previousVRC": "QmPreviousVRC3..."
+  },
+  "proof": {
+    "type": "Ed25519Signature2018",
+    "created": "2024-04-20T09:30:00Z",
+    "proofPurpose": "assertionMethod",
+    "verificationMethod": "did:example:evbatterymanufacturer012#keys-1",
+    "jws": "BwJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOls..."
+  }
+}
+

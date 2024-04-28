@@ -1,0 +1,23 @@
+{
+  "@context": ["https://www.w3.org/2018/credentials/v1"],
+  "type": ["VerifiableCredential", "ProvenanceCredential"],
+  "issuer": "did:example:carmaker345",
+  "issuanceDate": "2024-05-01T15:45:00Z",
+  "txid": "",
+  "credentialSubject": {
+    "id": "did:example:customer678",
+    "carDetails": {
+      "model": "Electric Sedan",
+      "VIN": "1HGBH41JXMN109186",
+      "transactionId": "0xmno13579..."
+    },
+    "previousVRC": "QmPreviousVRC4..."
+  },
+  "proof": {
+    "type": "Ed25519Signature2018",
+    "created": "2024-05-01T15:45:00Z",
+    "proofPurpose": "assertionMethod",
+    "verificationMethod": "did:example:carmaker345#keys-1",
+    "jws": "CxJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOls..."
+  }
+}

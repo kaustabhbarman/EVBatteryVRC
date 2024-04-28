@@ -1,0 +1,27 @@
+{
+  "@context": ["https://www.w3.org/2018/credentials/v1", "https://www.w3.org/2018/credentials/examples/v1"],
+  "type": ["VerifiableCredential", "LicenseCredential"],
+  "issuer": "did:example:ministry123",
+  "issuanceDate": "2024-01-01T19:73:24Z",
+  "description": "Permission to mine lithium in Chile",
+  "credentialSubject": {
+    "id": "did:example:rawmaterialsupplier456",
+    "license": {
+      "type": "Mining License",
+      "allowedResource": "Lithium",
+      "jurisdiction": "Chile",
+      "validFrom": "2024-01-01",
+      "validTo": "2029-01-01"
+    },
+    "terms": {
+      "compliance": "Must adhere to environmental and ethical standards as outlined in Examplestan's Mining Regulations"
+    }
+  },
+  "proof": {
+    "type": "Ed25519Signature2018",
+    "created": "2024-01-01T19:73:24Z",
+    "proofPurpose": "assertionMethod",
+    "verificationMethod": "did:example:ministry123#keys-1",
+    "jws": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOls..."
+  }
+}
