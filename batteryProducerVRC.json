@@ -3,15 +3,17 @@
   "type": ["VerifiableCredential", "ProvenanceCredential"],
   "issuer": "did:example:batterycomponentmanufacturer789",
   "issuanceDate": "2024-03-10T12:00:00Z",
-  "txid": "",
+  "txid": "0x5bda03767a48e7d7d9b5c0ce6554251dc6f094570b391f5183f38fd9d9e54d13",
   "credentialSubject": {
     "id": "did:example:evbatterymanufacturer012",
     "authority": ["assemble", "sell"],
     "componentDetails": {
       "cathodes": "500 units",
-      "transactionId": "0xghi789..."
+      "transactionId": "0x5bda03767a48e7d7d9b5c0ce6554251dc6f094570b391f5183f38fd9d9e54d13"
     },
-    "previousVRC": "QmPreviousVRC2..."
+    "previousVRC": {
+      "LithiumVRC": "https://ipfs.io/ipfs/QmdzKH24QNah3HwPUwmmQN8kcumDdNTyuBPCJJoVXCqmaj?filename=batteryComponentManufacturerVRC.json"
+    }
   },
   "proof": {
     "type": "Ed25519Signature2018",
