@@ -1,0 +1,27 @@
+{
+  "@context": ["https://www.w3.org/2018/credentials/v1", "https://www.w3.org/2018/credentials/examples/v1"],
+  "type": ["VerifiableCredential", "ProvenanceCredential"],
+  "issuer": "did:example:batterycomponentmanufacturer789",
+  "issuanceDate": "2024-05-06T12:00:00Z",
+  "txid": "0x056fb2b039b03bdce0544b6ac5b693bc52d41b38c7f85fdb6e006c974e47b36c",
+  "credentialSubject": {
+    "id": "did:example:evbatterymanufacturer012",
+    "authority": ["assemble", "sell"],
+    "componentDetails": {
+      "anodes": "500 units",
+      "batchQuantity": "2",
+      "transactionId": "0x056fb2b039b03bdce0544b6ac5b693bc52d41b38c7f85fdb6e006c974e47b36c"
+    },
+    "previousVRC": {
+      "LithiumVRC": "https://ipfs.io/ipfs/QmdzKH24QNah3HwPUwmmQN8kcumDdNTyuBPCJJoVXCqmaj?filename=batteryComponentManufacturerVRC.json"
+    }
+  },
+  "proof": {
+    "type": "Ed25519Signature2018",
+    "created": "2024-03-10T12:00:00Z",
+    "proofPurpose": "assertionMethod",
+    "verificationMethod": "did:example:batterycomponentmanufacturer789#keys-1",
+    "jws": "ZyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOls..."
+  }
+}
+
