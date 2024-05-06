@@ -8,12 +8,13 @@
     "id": "did:example:batterycomponentmanufacturer789",
     "authority": ["process", "battery component manufacture"],
     "lithiumBatch": {
+      "batchQuantity": "2",
       "quantity": "800 kg",
       "batchNumber": "LB1234",
-      "transactionId": "0xdef456..."
+      "transactionId": "0x947dcbf6B5fB538259d6DaCA9dE637E76674b172"
     },
     "previousVRC": {
-      "Lithium": "QmPreviousVRC1..."
+      "LithiumLicense": "QmPreviousVRC1..."
     }
   },
   "proof": {
@@ -24,3 +25,4 @@
     "jws": "EyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOls..."
   }
 }
+
