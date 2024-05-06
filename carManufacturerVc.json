@@ -2,17 +2,20 @@
   "@context": ["https://www.w3.org/2018/credentials/v1", "https://www.w3.org/2018/credentials/examples/v1"],
   "type": ["VerifiableCredential", "ProvenanceCredential"],
   "issuer": "did:example:evbatterymanufacturer012",
-  "issuanceDate": "2024-04-20T09:30:00Z",
-  "txid": "",
+  "issuanceDate": "2024-05-06T09:30:00Z",
+  "txid": "0x335604df14fec3f3f3a1d70ed809e1650cea58c15d62ba7f7c7bb9cd91042232",
   "credentialSubject": {
     "id": "did:example:carmaker345",
     "authority": ["integrate", "sell"],
     "batteryDetails": {
       "batchNumber": "EB2345",
-      "quantity": "100 units",
-      "transactionId": "0xjkl101112..."
+      "quantity": "1 units",
+      "transactionId": "0x335604df14fec3f3f3a1d70ed809e1650cea58c15d62ba7f7c7bb9cd91042232"
     },
-    "previousVRC": "QmPreviousVRC3..."
+    "previousVRC": {
+      "cathodes": "https://ipfs.io/ipfs/QmZMJwEfHPXqkmeMe9LWEcvN3BsFm66gauWi2SuZ3xbEpY?filename=batteryProducerVRC.json",
+      "anodes": "https://ipfs.io/ipfs/QmSH4hiYKkmGcMLdTC6R673pfgZVbyFMSrzHNZ5eMwH4b3?filename=batteryProducerAnodesVRC.json"
+    }
   },
   "proof": {
     "type": "Ed25519Signature2018",
@@ -22,4 +25,3 @@
     "jws": "BwJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOls..."
   }
 }
-
